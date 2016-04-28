@@ -13,4 +13,5 @@ checkUpdate = () ->
 setInterval checkUpdate, 5000
 
 bs = require("browser-sync").create()
+bs.watch("*.html").on("change", bs.reload)
 bs.init { server: "." }
