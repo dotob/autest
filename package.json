@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browser-sync": "^2.12.5",
     "express": "^4.13.4",
     "express-livereload": "0.0.24",
     "simple-git": "^1.32.1"

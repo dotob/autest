@@ -1,10 +1,4 @@
 git = require('simple-git')()
-express = require 'express'
-livereload = require 'express-livereload'
-
-app = express()
-app.use express.static('.')
-livereload app, config={}
 
 checkUpdate = () ->
 	git.pull (error, data) ->
@@ -18,5 +12,5 @@ checkUpdate = () ->
 
 setInterval checkUpdate, 5000
 
-app.listen 3000, () ->
-	console.log 'Example app listening on port 3000!'
+bs = require("browser-sync").create()
+bs.init { server: "." }
