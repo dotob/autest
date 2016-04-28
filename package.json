@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
+    "express-livereload": "0.0.24",
     "simple-git": "^1.32.1"
   }
 }
